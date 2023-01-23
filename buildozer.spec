@@ -20,6 +20,12 @@ license = Hello, World!
 # Application icon (128x128)
 icon.filename = index.png
 
+# Android package name
+package.name = ArrangeDotMe
+
+# Android package domain
+package.domain = sty.Arrange.me
+
 # (bool) Indicate if the application should be fullscreen or not
 fullscreen = 1
 
@@ -54,12 +60,6 @@ android.ndk = 21
 
 # Java JDK version
 android.jdk = 8
-
-# Android package name
-package.name = ArrangeDotMe
-
-# Android package domain
-package.domain = sty.Arrange.me
 
 # Android entry point
 android.entrypoint = org.renpy.android.PythonActivity
