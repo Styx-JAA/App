@@ -1,4 +1,6 @@
 [app]
+source.dir = .
+source.include_exts = py
 
 # Application name
 title = ArrangeDotME
@@ -33,6 +35,9 @@ python = openpyxl
 
 [android]
 
+permissions = android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE
+
+
 # Minimum version of android for buildozer
 android.api = 27
 
@@ -42,7 +47,28 @@ android.minapi = 21
 # Minimum version of android ndk for buildozer
 android.ndk = 21
 
+# Java JDK version
+android.jdk = 8
+
+# Android package name
+package.name = com.Styx.arrangedotme
+
+# Android package domain
+package.domain = Styx
+
+# Android entry point
+android.entrypoint = org.renpy.android.PythonActivity
+
+# Android app theme
+android.theme = @android:style/Theme.NoTitleBar
+
 [ios]
 
 # Minimum version of ios for buildozer
 ios.deployment_target = 12.0
+
+# iOS bundle identifier
+ios.identifier = com.Styx.arrangedotme
+
+# iOS bundle name
+ios.name = ArrangeDotME
