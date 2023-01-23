@@ -51,10 +51,10 @@ android.ndk = 21
 android.jdk = 8
 
 # Android package name
-package.name = com.styx.arrangedotme
+package.name = com.styx.eze
 
 # Android package domain
-package.domain = styx
+package.domain = com.styx
 
 # Android entry point
 android.entrypoint = org.renpy.android.PythonActivity
@@ -68,7 +68,7 @@ android.theme = @android:style/Theme.NoTitleBar
 ios.deployment_target = 12.0
 
 # iOS bundle identifier
-ios.identifier = com.styx.arrangedotme
+ios.identifier = com.styx.eze
 
 # iOS bundle name
 ios.name = ArrangeDotME
