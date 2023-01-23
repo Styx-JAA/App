@@ -1,6 +1,6 @@
 [app]
 source.dir = .
-source.include_exts = py
+source.include_exts = py,png
 
 # Application name
 title = ArrangeDotME
@@ -20,6 +20,14 @@ license = Hello, World!
 # Application icon (128x128)
 icon.filename = index.png
 
+# (bool) Indicate if the application should be fullscreen or not
+fullscreen = 1
+
+# (str) Supported orientation (one of landscape, portrait or all)
+orientation = portrait
+
+requirements = kivy,openpyxl
+
 [buildozer]
 
 # Minimum version of python for buildozer
@@ -28,10 +36,7 @@ python = 3.7
 # Minimum version of kivy for buildozer
 kivy = 1.11.1
 
-[requirements]
-
-# List of python packages to be included
-python = openpyxl
+log_level = 2
 
 [android]
 
@@ -51,24 +56,13 @@ android.ndk = 21
 android.jdk = 8
 
 # Android package name
-package.name = com.ezekiel.jeg
+package.name = ArrangeDotMe
 
 # Android package domain
-package.domain = com.ezekiel
+package.domain = sty.Arrange.me
 
 # Android entry point
 android.entrypoint = org.renpy.android.PythonActivity
 
 # Android app theme
 android.theme = @android:style/Theme.NoTitleBar
-
-[ios]
-
-# Minimum version of ios for buildozer
-ios.deployment_target = 12.0
-
-# iOS bundle identifier
-ios.identifier = com.ezekiel.jeg
-
-# iOS bundle name
-ios.name = ArrangeDotME
